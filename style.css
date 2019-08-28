@@ -16,18 +16,23 @@ body, html{
     margin: 20px 5px;
 }
 .container-task{
-    display: flex;
-    margin: 50px 10px;
-    border: 5px solid rgb(255, 172, 19);
+    margin: 40px auto;
     border-radius: 15px;
-    padding: 30px 25px;
-    background: rgb(255, 193, 77);
-    -webkit-box-shadow: 6px 16px 25px -17px rgba(0,0,0,0.75);
-    -moz-box-shadow: 6px 16px 25px -17px rgba(0,0,0,0.75);
-    box-shadow: 6px 16px 25px -17px rgba(0,0,0,0.75);
+    min-height: 315px;
+    background-image: url(https://images.vectorhq.com/images/previews/d2c/thumbtack-note-blank-45997.png);
+    background-size: cover;
+    background-position: -2px 3px;
+    background-repeat: no-repeat;
+    position: relative;
+    min-width: 450px;
+    max-width: 450px;
 }
 .content-text{
     width: 80%;
+    position: absolute;
+    top: 115px;
+    left: 55px;
+    font-weight: 600;
 }
 .content-button{
     width: 20%;
@@ -109,20 +114,27 @@ body, html{
     background: rgb(248, 153, 1);
 }
 .content-button{
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
+    right: 50px;
+    bottom: 10px;
+}
+.content-button div{
+    display: flex;
 }
 .content-button div button{
     margin: 5px 7px;
 }
-.container-task .content-text{
+/* .container-task .content-text{
     background: rgb(255, 210, 85);
     border-radius: 15px;
-}
+} */
 .content-text p{
     word-break: break-all;
     padding: 0px 10px;
+    text-align: center;
 }
 span{
     font-size: 21px;
@@ -141,5 +153,23 @@ span{
     }
     .btn-plus span{
         font-size: 20px;
+    }
+    .container-task{
+        min-height: 235px;
+        max-height: 310px;
+        min-width: 250px;
+        max-width: 330px;
+        background-position: -10px;
+    }
+    .content-text {
+        width: 80%;
+        position: absolute;
+        top: 69px;
+        left: 30px;
+        font-size: 13px;
+        font-weight: 500;
+    }
+    .content-button {
+        bottom: 0px;
     }
 }

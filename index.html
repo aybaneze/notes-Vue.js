@@ -17,7 +17,8 @@
             <input type="text" v-model="tasks.titulo">
             <button v-on:click="addTask(tasks)" class="btn-plus"><span class="icon-add"></span></button>
         </div>
-        <div v-for="task in tasks" class="container-task">
+        <div class="container-all">
+          <div v-for="task in tasks" class="container-task">
             <div class="content-text">
                     <p>{{task.titulo}}</p>  
             </div>
@@ -35,6 +36,8 @@
                 </div>
             </div>
       </div>
+        </div>
+        
     </div>
 
 
