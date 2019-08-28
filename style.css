@@ -26,8 +26,11 @@ body, html{
     -moz-box-shadow: 6px 16px 25px -17px rgba(0,0,0,0.75);
     box-shadow: 6px 16px 25px -17px rgba(0,0,0,0.75);
 }
-.content-text,.content-button{
-    width: 50%;
+.content-text{
+    width: 80%;
+}
+.content-button{
+    width: 20%;
     text-align: center;
 }
 .btn-delete{
@@ -88,15 +91,15 @@ body, html{
     height: 50px;
     border: 1px solid rgb(70, 70, 70);
     border-radius: 10px;
+    padding: 10px 20px;
     -webkit-box-shadow: 6px 11px 41px -17px rgba(0,0,0,0.75);
     -moz-box-shadow: 6px 11px 41px -17px rgba(0,0,0,0.75);
     box-shadow: 6px 11px 41px -17px rgba(0,0,0,0.75);    
 }
 .btn-plus{
-    width: 50px;
-    height: 40px;
     border-radius: 5px;
     border: none;
+    padding: 10px 20px;
     background: rgb(255, 190, 9);
     cursor: pointer;
     font-size: 25px;
@@ -111,7 +114,7 @@ body, html{
     align-items: center;
 }
 .content-button div button{
-    margin: 0px 7px;
+    margin: 5px 7px;
 }
 .container-task .content-text{
     background: rgb(255, 210, 85);
@@ -127,4 +130,16 @@ span{
 .container-title h1{
     color: rgb(58, 58, 58);
     font-size: 42px;
+}
+
+@media only screen and (max-width: 600px) {
+    .btn-delete,.btn-check,.btn-edit,.btn-plus {
+        padding: 8px 8px;
+    }
+    span{
+        font-size: 15px;
+    }
+    .btn-plus span{
+        font-size: 20px;
+    }
 }
