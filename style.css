@@ -1,0 +1,130 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    background: rgb(255, 255, 255);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    max-width: 950px;
+    margin: 50px auto;
+}
+.container-title{
+    text-align: center;
+}
+.container-add{
+    text-align: center;
+    margin: 20px 5px;
+}
+.container-task{
+    display: flex;
+    margin: 50px 10px;
+    border: 5px solid rgb(255, 172, 19);
+    border-radius: 15px;
+    padding: 30px 25px;
+    background: rgb(255, 193, 77);
+    -webkit-box-shadow: 6px 16px 25px -17px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 16px 25px -17px rgba(0,0,0,0.75);
+    box-shadow: 6px 16px 25px -17px rgba(0,0,0,0.75);
+}
+.content-text,.content-button{
+    width: 50%;
+    text-align: center;
+}
+.btn-delete{
+    background: rgb(228, 27, 0);
+    color: #fff;
+    padding: 15px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn-delete:hover{
+    background: rgb(179, 21, 0);
+}
+.btn-edit{
+    background: rgb(0, 74, 170);
+    color: #fff;
+    padding: 15px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    -webkit-box-shadow: 6px 11px 48px -20px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 11px 48px -20px rgba(0,0,0,0.75);
+    box-shadow: 6px 11px 48px -20px rgba(0,0,0,0.75);
+}
+.btn-edit:hover{
+    background: rgb(0, 49, 114);   
+}
+.btn-check{
+    background: rgb(54, 54, 54);
+    color: #fff;
+    padding: 15px 15px;
+    border: none;
+    border-radius: 5px;
+    -webkit-box-shadow: 6px 11px 48px -20px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 11px 48px -20px rgba(0,0,0,0.75);
+    box-shadow: 6px 11px 48px -20px rgba(0,0,0,0.75);
+    cursor: pointer;
+}
+.btn-check:hover{
+    background: rgb(0, 0, 0);
+}
+.btn-check-active{
+    background: rgb(82, 206, 0);
+    color: rgb(0, 0, 0);
+    padding:  15px 15px;
+    border: none;
+    border-radius: 5px;
+    -webkit-box-shadow: 6px 11px 48px -20px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 11px 48px -20px rgba(0,0,0,0.75);
+    box-shadow: 6px 11px 48px -20px rgba(0,0,0,0.75);
+    cursor: pointer;
+}
+.btn-check-active:hover{
+    background: rgb(65, 163, 0);
+}
+.container-add input{
+    width: 60%;
+    height: 50px;
+    border: 1px solid rgb(70, 70, 70);
+    border-radius: 10px;
+    -webkit-box-shadow: 6px 11px 41px -17px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 11px 41px -17px rgba(0,0,0,0.75);
+    box-shadow: 6px 11px 41px -17px rgba(0,0,0,0.75);    
+}
+.btn-plus{
+    width: 50px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background: rgb(255, 190, 9);
+    cursor: pointer;
+    font-size: 25px;
+    color: #fff;
+}
+.btn-plus:hover{
+    background: rgb(248, 153, 1);
+}
+.content-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content-button div button{
+    margin: 0px 7px;
+}
+.container-task .content-text{
+    background: rgb(255, 210, 85);
+    border-radius: 15px;
+}
+.content-text p{
+    word-break: break-all;
+    padding: 0px 10px;
+}
+span{
+    font-size: 21px;
+}
+.container-title h1{
+    color: rgb(58, 58, 58);
+    font-size: 42px;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Tareas VUE</title>
+</head> 
+<body>
+    <div id="taskApp" class="container">
+        <div class="container-title">
+            <h1>{{nameApp}}</h1>
+        </div>
+        <div class="container-add">
+            <input type="text" v-model="tasks.titulo">
+            <button v-on:click="addTask(tasks)" class="btn-plus"><span class="icon-add"></span></button>
+        </div>
+        <div v-for="task in tasks" class="container-task">
+            <div class="content-text">
+                    <p>{{task.titulo}}</p>  
+            </div>
+            <div class="content-button">
+                <div> 
+                    <button class="btn-delete" v-on:click="Eliminar(task)">
+                      <span class="icon-remove"></span>
+                    </button>
+                    <button class="btn-edit">
+                      <span class="icon-pencil"></span>
+                    </button>
+                    <button class="btn-check" v-on:click="activeCheck(task)" v-bind:class="{'btn-check-active':task.done}">
+                      <span class="icon-checkmark"></span>
+                    </button>       
+                </div>
+            </div>
+      </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script type="text/javascript" src="apps.js"> </script>
+</body>
+</html>
